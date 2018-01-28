@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css-task3</title>
+	<style>
+		html,body {
+			margin: 0;
+			padding: 0;
+
+		}
+		.container {
+			/*width: 100%;*/
+			border: 1px #999 solid;
+			padding: 20px;
+			margin: 0px;
+			background-color: #eee;
+			box-sizing：border-box；
+		}
+		.team {
+			float: left;
+			width: 200px;
+			padding: 20px;
+			border: 1px #999 solid;
+			padding: 20px;
+			background-color: white;
+		}
+		.container::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.aside {
+			float: right;
+			padding: 20px;
+			border: 1px solid #999;
+			background-color: white;
+		}
+		.main {
+			border: 1px solid #999;
+			margin-left: 260px;
+			height: 250px;
+			margin-right: 140px;
+			background-color: white;
+			padding: 20px;	
+			overflow: hidden;	
+		}
+		.aside  div {
+			margin-top: 20px;
+		}
+		#id-span-team {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="team">
+			<img src="doggy.png" alt="dog">
+			<span id="id-span-team">ufme dsxi</span>
+		</div>
+		<div class="aside">
+			<div><img src="doggy.png" alt=""></div>
+			<div><img src="doggy.png" alt=""></div>
+			<div><img src="doggy.png" alt=""></div>
+			<div><img src="doggy.png" alt=""></div>
+		</div>
+		<div class="main">
+			在上快手之前，《在人间》是高尔基的文学名著，同名歌曲是快手上经常出现的BGM。这首歌的演唱者叫王建房，英文原版叫《what are words》。快手上跟风盛行，不止短视频配乐高度重合，就连特定时间内的素材内容趣味都高度趋同。由于平台信息的网状扩散，多数情况下你很难说清楚谁才是原创。不过你不能说快手缺乏原创力。三个月前我装载了快手，那会儿快手很火，批判声也是铺天盖地，据说内容多是农村三俗，还有人据此分析出了一个割裂的中国。媒体们喜欢搞个大新闻，无足为怪，他们也不是快手出现后才嗷嗷阶级固化的。装快手其实就是想搞明白，我们身边的人究竟是在做什么。
+
+
+		</div>
+	</div>
+</body>
+</html>

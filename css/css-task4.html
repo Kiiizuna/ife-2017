@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css-task4</title>
+	<style>
+		html,body {
+			position: relative;
+			height: auto;
+		}
+		.container {
+			background-color: #ccc;
+			width: 400px;
+			height: 200px;
+			position: absolute;
+			top: calc(50% + 200px);
+			left: calc(50% - 200px);
+			/*transform: translate(-50%,-50%);*/
+		}
+		.half {
+			background-color: #fc0;
+			/*border: 1px #fc0 solid;*/
+			height: 50px;
+			width: 50px;
+		}
+		.half-1 {
+			border-bottom-right-radius: 50px;
+		}
+		.half-2 {
+			border-top-left-radius: 50px;
+			position: absolute;
+			top: 150px;
+			left: 350px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="half half-1"></div>
+		<div class="half half-2"></div>
+	</div>
+</body>
+</html>
